@@ -2,7 +2,7 @@
 
          <?php 
             global $post;
-            $args = array('category'=>7, 'orderby'=>'rand');
+            $args = array('numberposts'=>27,'category'=>7, 'orderby'=>'rand');
             $custom_posts = get_posts($args);
             foreach($custom_posts as $post) : setup_postdata($post); ?>
              <div id='khung_avli'>
