@@ -1,5 +1,4 @@
  <div id='home_sweets_dathang'>
-
                         <div id='tit_name_home_sweets'>
                             <!-- đặt hàng thực phẩm trực tuyến từ sweethome-->
                             <?php
@@ -9,12 +8,12 @@
                            // var_dump($category);
                             echo $category;
                             ?>
-                        </div>
-                        <div id='quangcao1'></div>
+                        </div><!-- id='tit_name_home_sweets' -->
+                        <div id='quangcao1'></div><!-- id='quangcao1 -->
                         
          <?php 
             global $post;
-            $args = array('category'=>9, 'orderby'=>'rand');
+            $args = array('numberposts'=>27,'category'=>9, 'orderby'=>'rand');
             $custom_posts = get_posts($args);
             foreach($custom_posts as $post) : setup_postdata($post); ?>
              <div id='khung_dathang'>
@@ -62,7 +61,7 @@
                      <?php 
                      // cach 2 : dung shorecode
                     global $post;
-                    $args = array('category'=>10, 'orderby'=>'rand');
+                    $args = array('numberposts'=>27,'category'=>10, 'orderby'=>'rand');
                     $custom_posts = get_posts($args);
                     foreach($custom_posts as $post) : setup_postdata($post); ?> 
                                 <div id='images_left_tk' >
