@@ -30,6 +30,21 @@
 
 				<?php endwhile; endif; ?>
 		    </div><!--end post-->
+
+
+		    <ul>  
+    			   <?php wp_get_archives('type=postbypost&limit=20'); ?>
+    		</ul> 
+
+			
+				<div class="widget">
+		            <h2>Danh Mục Menu</h2>
+		            <?php wp_nav_menu(array('menu'=>'Categories Menu', 'container'=>'')); ?>
+		        </div>
+
+
+		        
+
 		    <?php comments_template(); ?>
 		</div><!-- id='cac_can_ho' -->
 		    
