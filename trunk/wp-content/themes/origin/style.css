@@ -206,6 +206,33 @@ body.archive #main-content h3,
 body.search #main-content h3
 {font-size: 18px; margin: 0px;}
 
+/*******************au co 1 *****************************/
+#infor_sweets_1auco {float:left; width: 689px; min-height:100%;margin: 10px 0px 10px 0px;}
+#khung_info { float:left;width: 319px; min-height: 100%; padding: 2px;}
+#cac_can_ho{width: 692px;float: left; margin: 10px 0px 0px 10px;}
+#name_can_ho{
+	color: #333300 !important;
+	font-weight: bold;
+	line-height: 1.3;
+	font-size: 18px;
+	text-align: center;
+	padding: 4px;
+	margin-bottom: 3px;
+	float:left;
+ }
+#text_can_ho {width: 319px;min-height: 100%;float:left;}
+#khung_can_ho {width: 313px;
+				height: 292px;
+				float: left;
+				margin: 0px 33px 0px 0px;
+				border-top: 1px double #ddd;
+				border-bottom: 1px double #ddd;
+}
+#img_can_ho img{float:left;width: 184px;height: 126px;padding: 1px ; border: 1px double #ddd;}
+#the_conted_can_ho {float: right;width: 109px;margin: 0px 0px 0px 19px;}
+
+/********************end au co 1 ****************************/
+
 /**** SIDEBAR SECOND *****/
 .tabs {height: 33px;border-left: 1px solid #bcd4da;}
 .tabs li {float: left;line-height: 31px;border: 1px solid #bcd4da;border-left: none;margin-bottom: -2px;}

@@ -4,13 +4,13 @@
 		<?php get_sidebar('second'); ?>
 		<div id="main-content">
 		            <?php if (have_posts()) : 
-		            var_dump($posts);
-		            die();
+	
 		            ?>
 
 		 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
-					<?php /* If this is a category archive */ if (is_category()) { ?>
+					<?php /* If this is a category archive */ 
+					   if (is_category()) { ?>
 						<h3>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h3>
 
 					<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
@@ -40,7 +40,7 @@
 		                <?php the_excerpt(); ?>
 		                <p class="meta-data">By: <strong><?php the_author(); ?></strong> | On: <?php the_time('F j, Y'); ?></p>               
 		        <?php endwhile; else : ?>
-					<h3> Nothing found!</h3>
+					<h3> không thể tìm thấy</h3>
 				</div>
 
 			<?php endif; ?>
