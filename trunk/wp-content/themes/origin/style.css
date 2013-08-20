@@ -55,6 +55,7 @@ a {color: #ce9702; text-decoration: none;}
 	box-shadow: 5px 10px 5px #666;
 	-moz-box-shadow: 5px 5px 5px #666;
 	-webkit-box-shadow: 0px 10px 5px #8D8686;
+	margin: 0px auto;
     }
 #bg_top h1 a { 
 	text-indent: 0px;
