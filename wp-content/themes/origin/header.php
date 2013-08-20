@@ -308,7 +308,7 @@
 		<div id="searchBox">
                 <?php get_search_form(); ?>
         </div>
-	</div>
+	</div><!--id='bg_top'-->
 	
 	<div id="page-wrap">
 
