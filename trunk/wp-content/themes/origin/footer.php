@@ -1,7 +1,4 @@
-</div><!--end page-wrap-->
- 
-    <div id="footer">
-
+ <div id="footer">
     	<?php 
 		            global $post;
 		            $args = array('numberposts'=>1,'category'=>20, 'orderby'=>'rand');

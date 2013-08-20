@@ -135,10 +135,27 @@ a {color: #ce9702; text-decoration: none;}
 #facebook {float: right;}
 
 /**** MAIN STRUCTURE *****/
-#content-wrap {width: 95%; overflow: hidden;margin: 20px;line-height: 1.5;font-size: 12px;}
-#first-sidebar {width: 197px; float: left;}
-#main-content {width: 540px; float: left; margin: 0 15px;}
-#second-sidebar {width: 229px; float: right;}
+#page-info-wapper {/*margin: 0px; overflow: hidden;border-bottom: 1px double #ddd;padding-bottom: 29px;min-height: 100%;*/
+					margin: 0px 20px 20px 20px;
+					border-bottom: 1px double #ddd;
+					padding-bottom: 29px;
+					min-height: 100%;
+					width: 96%;
+					overflow: hidden;
+					line-height: 1.5;
+					font-size: 12px;
+ }
+#main-content {/* width: 540px; float: left; margin: 0 15px;*/
+	width: 698px;
+	position: relative;
+	float: left;
+	min-height: 100%;
+     }
+#content-wrap {/** can chinh dinh dang ben phai sidebar **/
+		float:right;width: 208px;min-height: 100%}
+#first-sidebar {float: right;position: relative;width: 208px;min-height: 100%;}
+#second-sidebar {float: right;position: relative;width: 208px;min-height: 100%;}
+#cac_can_ho{width: 698px;position: relative;float: left;min-height: 100%;}
 
 #menu-categories-menu {padding: 5px;}
 #menu-categories-menu li a {color: #666; display: block;padding: 0px 0px 5px 0px;border-bottom: 1px dotted #bcd4da;}
@@ -180,7 +197,7 @@ body.page #content-wrap,
 body.error404 #content-wrap,
 body.archive #content-wrap,
 body.search #content-wrap
- {/* margin: 30px 0px;*/ margin: 20px;line-height: 1.5;font-size: 12px;}
+ {margin: 0px;line-height: 1.5;font-size: 12px;}
  
 body.single #main-content .post p {margin: 10px 0px; padding: 0;}
 body.single #main-content .post h3, 

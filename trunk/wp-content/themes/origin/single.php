@@ -1,34 +1,40 @@
 <?php get_header();?>
-<?php get_sidebar(); ?>
-<div id="main-content">
-    <div class="post">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+<div id='page-info-wapper'>
+		<?php get_sidebar(); ?>
+		<?php get_sidebar('second'); ?>
+		<div id="main-content">
 			
-			<h3><?php the_title(); ?></h3>
-			
-			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+			<div id='cac_can_ho'>
+			    <div class="post">
+			        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<div class="entry">
-				
-				<?php the_content(); ?>
+					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+						
+						<h3><?php the_title(); ?></h3>
+						
+						<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+						<div class="entry">
+							
+							<?php the_content(); ?>
 
-			</div>
-			
-			<?php edit_post_link('Chỉnh Sửa','','.'); ?>
-			
-		</div>
+							<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+							
+							<?php the_tags( 'Tags: ', ', ', ''); ?>
 
-	<?php endwhile; endif; ?>
-    </div><!--end post-->
-    <?php comments_template(); ?>
-</div><!--end main-content-->
-<?php get_sidebar('second'); ?>
-<?php get_footer(); ?>
+						</div>
+						
+						<?php edit_post_link('Chỉnh Sửa','','.'); ?>
+						
+					</div>
 
+				<?php endwhile; endif; ?>
+		    </div><!--end post-->
+		    <?php comments_template(); ?>
+		</div><!-- id='cac_can_ho' -->
+		    
+		</div><!--end main-content-->
+	</div><!-- id='page-info-wapper' -->
+		<?php get_footer(); ?>
+</div><!-- id="page-wrap" -->
 

@@ -266,14 +266,33 @@
 
   <?php } ?>
 
-    <?php if(is_page(11))
+    <?php if(is_page())
        {  ?>
-          <script src="<?php echo bloginfo('template_directory'); ?>/js/faqs.js"></script>
+          
+        <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/gioithieu.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/can_ho_tieu_chaun.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/Ho_tay_cuoi_tuan.css" />
+	    <script src="<?php echo bloginfo('template_directory'); ?>/js/faqs.js"></script>
     <?php }?>
 
     <?php if(is_single()) 
      { ?>
         <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/comments.css" />
+        <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/gioithieu.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/can_ho_tieu_chaun.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
+	    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/Ho_tay_cuoi_tuan.css" />
     <?php }?>
 </head>
 
