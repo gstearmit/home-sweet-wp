@@ -77,6 +77,7 @@ if ( !is_multisite() ) {
 		$whitelist_options['general'][] = 'siteurl';
 	if ( !defined( 'WP_HOME' ) )
 		$whitelist_options['general'][] = 'home';
+		//$whitelist_options['general'][] = 'Sweet Home Serviced Apartment';
 
 	$whitelist_options['general'][] = 'admin_email';
 	$whitelist_options['general'][] = 'users_can_register';
