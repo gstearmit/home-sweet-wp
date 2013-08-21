@@ -39,4 +39,5 @@ get_template_part('includes/breadcrumbs'); ?>
 	<?php get_sidebar(); ?>
 </div> <!-- end #content -->
 */
+?>
 <?php get_footer(); ?>

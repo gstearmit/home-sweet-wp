@@ -67,7 +67,7 @@
 	-->
 	  
 
-	</div> <!-- end #container -->
+	</div><!-- end #container -->
 	<?php get_template_part('includes/scripts'); ?>
 	<?php wp_footer(); ?>
 
