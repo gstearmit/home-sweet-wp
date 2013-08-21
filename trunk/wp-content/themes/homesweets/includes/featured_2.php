@@ -1,4 +1,4 @@
-<div id="page-info">
+
     <div id="featured">
     <!-- 
         <div id="accordion">
@@ -56,4 +56,3 @@
 
 
 
-</div><!--end page-info-->

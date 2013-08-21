@@ -126,7 +126,7 @@
             <div id='chinh_images'>
                 <?php // anh silde chay o day ?>
                 
-                    <?php get_template_part('includes/entry'); ?>
+                    <?php if ( get_option('chameleon_featured') == 'on' ) get_template_part('includes/featured'); ?>    
                 
             </div> <!-- id='chinh_images -->
 
@@ -137,8 +137,8 @@
             
             <?php do_action('et_header'); ?>
 
-            <?php $menuClass = 'nav';
-            $menuID = 'top-menu';
+            <?php $menuClass = 'menu';
+            $menuID = 'menu-page-menu';
             $primaryNav = '';
             if (function_exists('wp_nav_menu')) {
                 $primaryNav = wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => $menuClass, 'menu_id' => $menuID, 'echo' => false ) );
@@ -157,9 +157,7 @@
           </div> <!-- id='top-menu-bar'-->
             
         </div><!--end top-bar-->
+ <div id="page-info">
 
-	<?php do_action('et_header_top'); ?>
-
-
-<!--	<div id="container">
+	<?php //do_action('et_header_top'); ?>
 		

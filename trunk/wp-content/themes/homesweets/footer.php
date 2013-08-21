@@ -1,3 +1,4 @@
+</div><!--end page-info-->
 	 <div id="footer">
     	<?php 
 		            global $post;
