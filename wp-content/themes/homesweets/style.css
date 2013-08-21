@@ -37,7 +37,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section { display: bl
 .group { display: inline-block; clear: both; }
 /* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
 
-body { font: 12px/2 "Arial",Helvetica,Arial,sans-serif;background-color: #C2C2C2;font-family:Arial,Helvetica,,sans-serif; }
+body { font: 12px/2 ;background-color: #C2C2C2;font-family:Arial,Helvetica,,sans-serif; }
 
 /*
 	TYPOGRAPHY
@@ -64,6 +64,7 @@ a {color: #ce9702; text-decoration: none;}
 	color: #fff;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 130px;
+	float:left;
 	 }
 #ket_noi_sosial {
 	background: url(images/social-royal.png);
@@ -111,6 +112,12 @@ a {color: #ce9702; text-decoration: none;}
 	left: 41px;
 }
 
+#additional-info{position: absolute;right: 156px;top: 49px;}
+#et-social-icons{float:left;padding-right:20px;padding-top:9px}
+#et-social-icons a{padding-left:3px}
+#search-form{background:url(images/search-bg.png) no-repeat;float:right;height:28px;width:161px}
+#search-form #searchinput{background:none;border:none;color:#a3a3a3;float:left;font-family:Georgia, serif;font-size:11px;font-style:italic;margin:5px 7px 0 5px;padding-left:9px;text-shadow:1px 1px 0 #fff;width:114px}
+#search-form #searchsubmit{margin-right:7px;margin-top:7px}
 #searchBox {float: right;margin: 0px 0 0 0;display: inline-block;right: 79px;position: relative;}
 #searchBox input[type='text'] {padding: 3px;}
 #searchBox input[type='submit']{width: 50px; height: 23px; border:none; background:url(images/search_button.gif) no-repeat top left;position: relative;top: 6px;right: -5px;}
