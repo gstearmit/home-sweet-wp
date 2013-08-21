@@ -2,8 +2,8 @@
 
 <div id="featured<?php if ( $et_slider_type == 'roundabout' ) echo '-modest'; ?>">
 	<?php if ( $et_slider_type == 'cycle' ) { ?>
-		<a id="left-arrow" href="#"><?php esc_html_e('Previous','Chameleon'); ?></a>
-		<a id="right-arrow" href="#"><?php esc_html_e('Next','Chameleon'); ?></a>
+		<a id="left-arrow" href="#"><?php esc_html_e('về trước','Chameleon'); ?></a>
+		<a id="right-arrow" href="#"><?php esc_html_e('Tiếp theo','Chameleon'); ?></a>
 	<?php } ?>
 	
 <?php if ( $et_slider_type <> 'roundabout' ) { ?>
@@ -58,7 +58,7 @@
 			<?php if ( $et_slider_type == 'nivo' ) { ?>
 				<?php
 				$width = 960;
-				$height = 332;
+				$height = 228;
 				$titletext = get_the_title();
 
 				$thumbnail = get_thumbnail($width,$height,'',$titletext,$titletext,false,'Featured');

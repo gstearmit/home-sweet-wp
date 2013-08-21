@@ -1,6 +1,6 @@
 <?php 
 /* 
-Template Name: Theme page Sweet Home 1 AU CO
+Template Name: Theme page Sweet Home 3 TONGOCVAN
 Comment : ( các trang chính hiển thị)
 */
 ?>
