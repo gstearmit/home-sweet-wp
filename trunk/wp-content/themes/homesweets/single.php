@@ -104,32 +104,6 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 
 		<div id="content" class="clearfix">
 			<div id="left-area">
-
-
-				<?php 
-				/*
-				//is_page()
-				if (is_single()) { ?>
-								<?php $category = get_the_category();
-
-									var_dump($category);
-
-									  $catlink = get_category_link( $category[0]->cat_ID );
-									  echo ('<a href="'.esc_url($catlink).'">'.esc_html($category[0]->cat_name).'</a> '.'<span class="raquo">&raquo;</span> '.get_the_title()); ?>
-							<?php } elseif (is_category()) { ?>
-								<?php single_cat_title(); ?>
-							<?php } elseif (is_author()) { ?>
-								<?php $curauth = get_userdata($post->post_author); ?>
-								<?php esc_html_e('Posts by ','Chameleon'); echo ' ',$curauth->nickname; ?>
-							<?php } elseif (is_page()) { ?>
-								<?php wp_title(''); ?>
-							<?php }; ?>
-				*/
-			?>
-
-
-
-
 				
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div > <!-- class="entry post clearfix" -->
