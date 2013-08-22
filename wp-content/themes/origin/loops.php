@@ -9,7 +9,9 @@ endif;
 
 ?>
 
-<?php // su dung query_posts de sua lai cau truc mac dinh cua loop.
+<?php 
+ // su dung query_posts de sua lai cau truc mac dinh cua loop.
+// co 5 bai viet hiển hị trên một trang  và id cửa catalogue là 3
     query_posts('posts_per_page=5&cat=3&orderby=rand');
     if(have_posts()) : while(have_posts()) : the_post();
     

@@ -16,6 +16,7 @@
                 <div id='the_conted_adv'>
                     <?php the_content();?>
                 </div><!-- id='the_conted_adv' -->
+                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
              </div><!-- right_adv -->
                 
         <?php

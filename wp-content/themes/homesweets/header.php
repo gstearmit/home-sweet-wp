@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/Ho_tay_cuoi_tuan.css" />
-        <script src="<?php echo bloginfo('template_directory'); ?>/js/faqs.js"></script>
+        <!-- <script src="<?php echo bloginfo('template_directory'); ?>/js/faqs.js"></script>-->
     <?php }?>
 
     <?php if(is_single()) 

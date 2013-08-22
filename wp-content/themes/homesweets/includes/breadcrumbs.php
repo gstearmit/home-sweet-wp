@@ -23,7 +23,9 @@
 					<?php $curauth = get_userdata($post->post_author); ?>
 					<?php esc_html_e('Posts by ','Chameleon'); echo ' ',$curauth->nickname; ?>
 				<?php } elseif (is_page()) { ?>
-					<?php wp_title(''); ?>
+					<?php wp_title(''); 
+					//echo "nếu là trang hiển thị tên trang";
+					?>
 				<?php }; ?>
 	<?php }; ?>
 </div> <!-- end #breadcrumbs -->

@@ -28,7 +28,7 @@
 			</div><!-- id='noi_bat_galylle -->
         
 		
-		
+		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 		
 	</div><!-- id='noi_bat_khung -->
 
@@ -51,6 +51,8 @@
 		            wp_reset_postdata(); ?>
 				</p>
 			</div><!-- id='noi_bat_galylle -->
+			
+			<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 	</div><!-- id='noi_bat_khung -->
 
 	<?php // khung da ta thu 3 ?>
@@ -73,7 +75,7 @@
 				</p>
 		</div><!-- id='noi_bat_galylle -->
 		
-		
+		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 	</div><!-- id='noi_bat_khung -->
 
 </div><!-- id='noi_bat_index -->

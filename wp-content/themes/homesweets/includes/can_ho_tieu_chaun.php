@@ -17,6 +17,7 @@
             foreach($custom_posts as $post) : setup_postdata($post); ?>
              <div id='post_name'>
                     <?php the_content()?>
+                    <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
             </div><!--id='post_name' -->   
                 
         <?php

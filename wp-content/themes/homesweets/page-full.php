@@ -57,11 +57,14 @@ Comment : ( các trang chính hiển thị)
             foreach($custom_posts as $post) : setup_postdata($post); ?>
              	<div id='khung_info'>
              		<div id='name_info'>
-             			<?php the_title(); ?>
+             			<a href="<?php the_permalink();?>">
+                            <?php the_title(); ?>
+             			</a>
              		</div> <!-- id='name_info -->
              		<div id='contend_info'>
-             			<?php  the_content();?>
+             			<a href="<?php the_permalink();?>"><?php  the_content();?>	</a>
              		</div> <!-- id='contend_info -->
+             		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
              	</div><!-- khung_info -->
 						                
 			<?php
@@ -79,17 +82,23 @@ Comment : ( các trang chính hiển thị)
 		            
 		             <div id='khung_can_ho'>
 		             	<div id='name_can_ho'>
-		                    <?php the_title();?>
+		                    <a href="<?php the_permalink();?>">
+		                    	<?php the_title();?>
+		                    </a>
 		                </div><!-- name_can_ho -->
 		                <div id='text_can_ho'>
 		                	<div id='img_can_ho'>
-		                    <?php  the_post_thumbnail(array(184,126));?>
+			                    <a href="<?php the_permalink();?>">
+			                    	<?php  the_post_thumbnail(array(184,126));?>
+			                    </a>
 			                </div><!-- img_can_ho -->
 			                <div id='the_conted_can_ho'>
-			                    <?php the_content();?>
+			                   <a href="<?php the_permalink();?>">
+			                   		<?php the_content();?>
+			                   </a> 
 			                </div><!-- id='the_conted_can_ho' -->
 		                </div> <!-- id='text_can_ho' -->
-		                
+		                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 		             </div><!-- khung_can_ho-->
 		                
 		        <?php
