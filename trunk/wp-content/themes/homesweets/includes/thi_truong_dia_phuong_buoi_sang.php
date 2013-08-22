@@ -24,6 +24,7 @@
                  		<?php the_content()?>
                     </a>
                  </div><!-- contend_thi_truong -->
+                 <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
              </div><!--id='post_name' -->   
                 
         <?php

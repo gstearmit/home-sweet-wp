@@ -28,6 +28,7 @@
 		<div id='google_detail_meta'>
 			<p>Vị trí trong một nơi yên bình và an toàn gần Hồ Tây, trên đường Âu Co 3 phút đi bộ đến trạm xe buýt và trạm xe taxi. 12 phút đi bộ đến Hồ Tây. . 15 phút lái xe đến trung tâm thành phố siêu thị, chợ, quán cà phê, cửa hàng, nhà hàng gần đây: thị trường trong nước chỉ là bên cạnh bạn, Fivimart siêu thị và trung tâm mua sắm Syrena, rau xanh, Yuki trái cây tươi và thực phẩm thực vật; Alfresco - nhà hàng Mỹ, Salsa - nhà hàng Tây Ban Nha, nhà hàng Nhật Bản, cà phê và các cửa hàng Joma nhiều hơn, nhà hàng ... Xuân Diệu và để đường phố Tô Ngọc Vân là trong tầm tay trong vòng 15 phút đi bộ. Đặc biệt trong vòng 3 phút đi bộ, bạn sẽ thấy thị trường hoa nổi tiếng nhất của Hà Nội nằm ở đây.  đường lớn để truy cập xe. </p>
 		</div><!-- id='google_detail_meta -->
+		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 	</div><!-- id='ke_khung_cata -->
 
 	<?php // khung da ta thu 2 ?>
@@ -74,7 +75,9 @@
 		<div id='google_detail_meta'>
 			<p>Vị trí trực tiếp bên bờ hồ, nơi rất bình tĩnh với quang cảnh hồ đẹp. 15 phút lái xe đến trung tâm thành phố. siêu thị, quán cà phê, cửa hàng, nhà hàng, quán bar gần đó dọc theo đường Xuân Diệu là trong tầm tay trong vòng 10 phút đi bộ. đường lớn cho xe hơi truy cập.</p>
 		</div><!-- id='google_detail_meta -->
+		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 	</div><!-- id='ke_khung_cata -->
+
 	<?php // khung da ta thu 3 ?>
 	<div id='ke_khung_cata'>
 		<div id='galylle_cata'>
@@ -112,6 +115,7 @@
 		<div id='google_detail_meta'>
 			<p>Vị trí trên đường lớn để truy cập xe hơi -. Tô Ngọc Vân . 15 phút lái xe đến trung tâm thành phố Tô Ngọc Vân bây giờ là một đường phố nổi tiếng, như người Việt Nam gọi nó là đường phố phương Tây, với các nhà hàng phương Tây, các quán cà phê, cửa hàng thực phẩm nhỏ, các cửa hàng , trường mẫu giáo quốc tế, vv  Đặc biệt, trong vòng 3 phút đi bộ, bạn có thể đạt đến hồ Tây, nơi chuyên gia cho hoa sen, đó là một trong những điều nổi tiếng về Hồ Tây.</p>
 		</div><!-- id='google_detail_meta -->
+		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
 	</div><!-- id='ke_khung_cata -->
 
 </div><!-- id='home_se_catalogue -->

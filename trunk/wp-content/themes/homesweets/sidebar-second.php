@@ -28,6 +28,7 @@
                             </a>
                          </div>
                     </div><!-- id='name_avali' -->
+                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
             </div><!--id='khung_avli' -->   
                 
         <?php
@@ -70,6 +71,7 @@
                                       <?php the_post_thumbnail(array(85,99));?>
                                     </a>
                                  </div>
+                                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
                     <?php
                         endforeach;
                         wp_reset_postdata();

@@ -177,7 +177,7 @@
          include (TEMPLATEPATH . '/includes/homesweets_dathang.php');
         ?>
     </div><!-- id='homesweets_avali' -->
-<?php echo 'HOME   hoang cong phuc'; ?>
+<?php // echo 'HOME   hoang cong phuc'; ?>
 
 
 <?php 
@@ -195,4 +195,5 @@ get_template_part('includes/breadcrumbs'); ?>
 </div> <!-- end #content -->
 */
 ?>
+</div><!-- page info -->
 <?php get_footer(); ?>
