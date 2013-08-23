@@ -198,7 +198,7 @@ a { color: #333300 ; text-decoration: none;}
 .date {text-decoration: underline; color: #898989;text-align: right; font-size: 11px;}
 
 /***** MAIN CONTENT *****/
-#main-content h2 {padding: 5px 0px 0px 15px;color: white;font-size: 16px;background: url(images/cat-bg.png) no-repeat top left;border-bottom: 1px solid #bcd4da;}
+#main-content h2 {padding: 5px 0px 0px 15px;color: white;font-size: 16px;}
 
 #main-content h2 a {color: white;}
 .post {position: relative; margin-bottom: 30px;}
@@ -423,7 +423,7 @@ font-size: 15px;
     min-width: 100%;
 }
 #left-area {
-width: 698px;
+width: 685px;
 position: relative;
 float: left;
 min-height: 100%;
@@ -454,7 +454,7 @@ text-align: left;
 	float:left;
 }
 #ke_khung_cata_vitri{
-top: -24px;
+top: -62px;
 width: 444px;
 min-height: 100%;
 position: relative;
@@ -472,7 +472,44 @@ font-weight: bold;
 /************dinh dang cho chi tiet post**********/
 
 
+/*************************/
+#hiden_shorecode p { display: none;}
+#khung_loca {width: 685px;position: relative;float: left;min-height: 100%;}
+#khung_loca p {display: none;}
+#look_khung {
+	width:286px;min-height:100%; float:left;
+	margin: 0px 31px 10px 0px ;
+}
+#look_khung p { 
+	display: block;
+color: #333300 !important;
+font-weight: bold;
+line-height: 1.3;
+font-size: 18px;
+text-align: center;
+padding: 4px;
+margin-bottom: 3px;
+padding-bottom: 10px;
+border-bottom: 1px double #ddd;
+}
 
+#look_khung h3 {
+display: block;
+color: #333300 !important;
+line-height: 1.3;
+font-size: 16px;
+text-align: center;
+padding: 4px;
+margin-bottom: 3px;
+}
+#look_khung h4 { 
+	color: #666 !important;
+line-height: 1.3;
+font-size: 15px;
+text-align: center;
+padding: 4px;
+margin-bottom: 3px;  }
+/************************/
 
 
 

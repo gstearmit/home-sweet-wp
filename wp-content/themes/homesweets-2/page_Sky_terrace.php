@@ -36,7 +36,10 @@ Comment : Sky terrace in 7th floor
 						<?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Trang','Chameleon').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 						
 						<div id='page_edit_link'>
-							<?php edit_post_link(esc_html__('Chỉnh Sửa page','Chameleon')); ?>
+							<?php 
+
+							//var_dump(edit_post_link(esc_html__('Chỉnh Sửa page','Chameleon'))); 
+							edit_post_link(esc_html__('Chỉnh Sửa page','Chameleon'));?>
 						</div><!-- id='page_edit_link' -->			
 					
 								
@@ -88,7 +91,7 @@ Comment : Sky terrace in 7th floor
 						     <li id="li_ul_n">
 							    <div id="fontName_n">Bình Luận </div>
 							    <div id="ldiv_one">
-							    	<textarea id="input-676595472446059273" class="wsite-form-input wsite-input wsite-input-width-370px" name="_u676595472446059273" style="height: 200px"></textarea>
+							    	<textarea id="input-676595472446059273" class="wsite-form-input wsite-input wsite-input-width-490x" name="_u676595472446059273" style="height: 200px;width: 639px;"></textarea>
 							   		
 								</div> <!-- id='ldiv_one'-->
 						    </li>
