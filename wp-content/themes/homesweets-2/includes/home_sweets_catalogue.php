@@ -29,7 +29,9 @@
 		            wp_reset_postdata(); ?>
 				</p>
 			</div><!-- id='galylle_cata -->
-        <?php // co so du lieu la ban 7 ?>
+        <?php   // co so du lieu la ban 7 
+        		// ban 7 thi thay localhost --> 192.168.1.15 o database va font-end - back - end wordpress
+        ?>
 		
 		
 		
