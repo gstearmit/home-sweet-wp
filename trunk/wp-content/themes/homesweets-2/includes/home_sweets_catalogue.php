@@ -29,7 +29,7 @@
 		            wp_reset_postdata(); ?>
 				</p>
 			</div><!-- id='galylle_cata -->
-        
+        <?php // co so du lieu la ban 7 ?>
 		
 		
 		
