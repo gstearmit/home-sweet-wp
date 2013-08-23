@@ -19,8 +19,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 		<?php //get_template_part('includes/top_info'); ?>
 
 		<div id="content" class="clearfix">
-			<div id="left-area">
-
+			<div>
 				<?php 
 				/*
 					//is_page()
