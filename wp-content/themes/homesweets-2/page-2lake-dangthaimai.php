@@ -62,7 +62,7 @@ Comment : ( các trang chính hiển thị)
              			</a>
              		</div> <!-- id='name_info -->
              		<div id='contend_info'>
-             			<a href="<?php the_permalink();?>"><?php  the_content();?>	</a>
+             			<a href="<?php the_permalink();?>"><?php the_excerpt(60);?></a>
              		</div> <!-- id='contend_info -->
              		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
              	</div><!-- khung_info -->
@@ -94,7 +94,7 @@ Comment : ( các trang chính hiển thị)
 			                </div><!-- img_can_ho -->
 			                <div id='the_conted_can_ho'>
 			                   <a href="<?php the_permalink();?>">
-			                   		<?php the_content();?>
+			                   		<?php the_excerpt(60);?>
 			                   </a> 
 			                </div><!-- id='the_conted_can_ho' -->
 		                </div> <!-- id='text_can_ho' -->
