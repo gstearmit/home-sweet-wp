@@ -58,10 +58,11 @@ $et_ptemplate_blog_perpage = isset( $et_ptemplate_settings['et_ptemplate_blog_pe
 				<?php query_posts("showposts=$et_ptemplate_blog_perpage&paged=" . $et_paged . $cat_query); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
-					<div class="et_pt_blogentry clearfix">
-						<h2 class="et_pt_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<div class="et_pt_blogentry_blog clearfix">
+						<div id='titel_blog_name'><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div><!-- titel_blog_name -->
 						
-						<p class="et_pt_blogmeta"><?php esc_html_e('Bài viết','Chameleon'); ?> <?php esc_html_e('bởi','Chameleon'); ?> <?php the_author_posts_link(); ?> <?php esc_html_e('vào ngày','Chameleon'); ?> <?php the_time(esc_attr(get_option('chameleon_date_format'))) ?> <?php esc_html_e('trong thư mục','Chameleon'); ?> <?php the_category(', ') ?> | <?php comments_popup_link(esc_html__('0 comments','Chameleon'), esc_html__('1 comment','Chameleon'), '% '.esc_html__('comments','Chameleon')); ?></p>
+						<div class="coment_blog_vv"><?php esc_html_e('Bài viết','Chameleon'); ?> <?php esc_html_e('bởi','Chameleon'); ?> <?php the_author_posts_link(); ?> <?php esc_html_e('vào ngày','Chameleon'); ?> <?php the_time(esc_attr(get_option('chameleon_date_format'))) ?> <?php esc_html_e('trong thư mục','Chameleon'); ?> <?php the_category(', ') ?> | <?php comments_popup_link(esc_html__('0 comments','Chameleon'), esc_html__('1 comment','Chameleon'), '% '.esc_html__('comments','Chameleon')); ?>
+						</div>
 						
 						<?php $thumb = '';
 						$width = 184;
@@ -80,14 +81,32 @@ $et_ptemplate_blog_perpage = isset( $et_ptemplate_settings['et_ptemplate_blog_pe
 						<?php }; ?>
 						
 						<?php if (!$et_ptemplate_blogstyle) { ?>
-							<p><?php truncate_post(550);?></p>
-							<a href="<?php the_permalink(); ?>" class="readmore"><span><?php esc_html_e('đọc thêm','Chameleon'); ?></span></a>
+							<div id='blog_conten_meta'><?php truncate_post(550);?></div><!-- blog_conten_meta -->
+							<a href="<?php the_permalink(); ?>" class="readmore"><span><?php esc_html_e('đọc thêm','Chameleon'); ?></span>
+							</a>
+							
 						<?php } else { ?>
 							<?php
 								global $more;
 								$more = 0;
 							?>
-							<?php the_content(); ?>
+							<div id='blog_conten_meta'><?php the_content(); ?></div><!-- blog_conten_meta -->
+							<div id='sharr_ez'>
+								<div class="addthis_toolbox addthis_default_style ">
+								<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+								<a class="addthis_button_tweet"></a>
+								<a class="addthis_button_pinterest_pinit"></a>
+								<a class="addthis_counter addthis_pill_style"></a>
+								</div>
+								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b237a667b71e33"></script>
+			                 </div><!-- id='sharr_ez' -->	
+			                 <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
+							<a href="#<?php //the_permalink(); ?>" class="add_comment"><span><?php esc_html_e('AddComment','Chameleon'); ?></span>
+								<?php 
+								// goi binh luon tai link nay
+								// //the_permalink(); 
+								//if (get_option('chameleon_show_postcomments') == 'on') comments_template('', true); ?>
+							</a>
 						<?php } ?>
 					</div> <!-- end .et_pt_blogentry -->
 					
@@ -104,7 +123,7 @@ $et_ptemplate_blog_perpage = isset( $et_ptemplate_settings['et_ptemplate_blog_pe
 			
 			</div> <!-- end #et_pt_blog -->
 			
-			<?php edit_post_link(esc_html__('Chỉnh sửa bài viết','Chameleon')); ?>			
+			<?php //edit_post_link(esc_html__('Chỉnh sửa page','Chameleon')); ?>			
 		</div> <!-- end .entry -->
 	<?php endwhile; endif; ?>
 	</div> 	<!-- end #left-area -->
