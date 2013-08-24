@@ -53,7 +53,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 						*/ ?>
 					<?php } ?>
 					
-					<div class="paragraph" style="text-align:left;display:block;"><?php the_content(); ?></div>
+					<div id='sing_cont_dd' class="paragraph" style="text-align:left;display:block;"><?php the_content(); ?></div>
 					<?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Pages','Chameleon').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 					
 					<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
