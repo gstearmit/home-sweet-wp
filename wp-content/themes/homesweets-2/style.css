@@ -470,7 +470,7 @@ font-weight: bold;
 
 
 /************dinh dang cho chi tiet post**********/
-
+#google_detail_meta.gallery_box_single.gllr_image_row p a img { width:20px ; height:20px;}
 
 /*************************/
 #hiden_shorecode p { display: none;}
