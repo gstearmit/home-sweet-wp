@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /* 
 Template Name: Theme page Sweet Home 2 LAKESIDE
 Comment : ( các trang chính hiển thị)
@@ -62,7 +62,7 @@ Comment : ( các trang chính hiển thị)
              			</a>
              		</div> <!-- id='name_info -->
              		<div id='contend_info'>
-             			<a href="<?php the_permalink();?>"><?php the_excerpt(60);?></a>
+             			<a href="<?php the_permalink();?>"><?php  the_content();?>	</a>
              		</div> <!-- id='contend_info -->
              		<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
              	</div><!-- khung_info -->
