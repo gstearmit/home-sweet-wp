@@ -5,11 +5,6 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 */
 ?>
 
-
-
-
-
-
 <?php get_header(); ?>
 <div id='page-info-wapper'>
 		<?php get_sidebar(); ?>
@@ -19,108 +14,38 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 		<?php //get_template_part('includes/top_info'); ?>
 
 		<div id="content" class="clearfix">
-			<div>
-				<?php 
-				/*
-					//is_page()
-					if (is_page() || is_single()) { ?>
-									
-									    $id_page_l = get_page('');
-									    var_dump($id_page_l);
-									    echo "hien thi catalogue ";
-
-									    $category = get_the_category($id_page_l->ID);
-
-										var_dump($category);
-
-										  $catlink = get_category_link( $category[0]->cat_ID );
-										  echo ('<a href="'.esc_url($catlink).'">'.esc_html($category[0]->cat_name).'</a> '.'<span class="raquo">&raquo;</span> '.get_the_title()); ?>
-								<?php } elseif (is_category()) { ?>
-									<?php single_cat_title(); ?>
-								<?php } elseif (is_author()) { ?>
-									<?php $curauth = get_userdata($post->post_author); ?>
-									<?php esc_html_e('Posts by ','Chameleon'); echo ' ',$curauth->nickname; ?>
-								<?php } elseif (is_page()) { ?>
-									<?php wp_title(''); ?>
-								<?php }; ?>
-				*/
-				?>
-
-
-				<!------------------------>
-					<?php // khung da ta thu 3 ?>
-						<div id='ke_khung_cata'>
-							<div id='galylle_cata'>
-					                   <?php
-					                         global $id;$id = 11;  // 9 la id catalogue  
-					                         $category = get_the_category_by_ID($id);  // var_dump($category); ?>
-									<h3><?php  echo $category; ?></h3>
-									<p>
-										<?php 
-							            global $post;
-							            $args = array('category'=>11, 'orderby'=>'rand');
-							            $custom_posts = get_posts($args);
-							            foreach($custom_posts as $post) : setup_postdata($post); ?>
-												<a class="fancybox-thumbs" data-fancybox-group="thumb" 
-												href="<?php echo $cfs->get("images_gallery");?>">
-													<?php the_post_thumbnail();?>
-												</a>
-										<?php
-							            endforeach;
-							            wp_reset_postdata(); ?>
-									</p>
-							</div><!-- id='galylle_cata -->
-							<div id='google_map_ip'>
-										<?php
-											$args =  array('category'=>12, 'orderby'=>'rand');
-										    $My_query = get_posts($args); 
-										     global $map_api;
-										    foreach  ( $My_query as $map_api ) : setup_postdata($map_api); ?> 
-										    <?php the_content();?>
-										<?php
-							            endforeach;
-							            wp_reset_postdata();   ?>
-
-							</div><!-- id='google_map_ip -->
-							<div id='google_detail_meta'>
-								<p>Vị trí trên đường lớn để truy cập xe hơi -. Tô Ngọc Vân . 15 phút lái xe đến trung tâm thành phố Tô Ngọc Vân bây giờ là một đường phố nổi tiếng, như người Việt Nam gọi nó là đường phố phương Tây, với các nhà hàng phương Tây, các quán cà phê, cửa hàng thực phẩm nhỏ, các cửa hàng , trường mẫu giáo quốc tế, vv  Đặc biệt, trong vòng 3 phút đi bộ, bạn có thể đạt đến hồ Tây, nơi chuyên gia cho hoa sen, đó là một trong những điều nổi tiếng về Hồ Tây.</p>
-							</div><!-- id='google_detail_meta -->
-							<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
-						</div><!-- id='ke_khung_cata -->
-				<!-------------------- -->
-
-
-				<!-----tinh nang noi bat ------>
-				<div id='ke_khung_cata_vitri'>
-					<?php include (TEMPLATEPATH . '/includes/tinh_nang_noi_bat.php'); ?>
-				</div><!-- id='ke_khung_cata'> -->
-				<!-----end tinh nang noi bat---->
-
-
-		<div id='ke_khung_cata'>
-			<?php  // truy van 
-			//Sweethome 1 trong đường Âu Cơ
-
-            global $post;
-            $args = array('numberposts'=>27,'category'=>24, 'orderby'=>'rand');
-            $custom_posts = get_posts($args);
-            foreach($custom_posts as $post) : setup_postdata($post); ?>
-            <div id='name_noi_bat'> <?php the_title();?></div><!-- name_noi_bat-->
-              <div id=''>
-                 <a href="<?php bloginfo('url'); ?>/sweet-home-1-au-co/"> <?php the_post_thumbnail( array(321,480));?></a>
-                 <?php the_content();?>
-                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
-            </div><!-- id='' -->   
-                
-        <?php
-            endforeach;
-            wp_reset_postdata();
-   
-			?>
-
-		</div><!-- <div id='ke_khung_cata'> -->
-
-
+			
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<div id="left-area">							
+						<?php if (get_option('chameleon_page_thumbnails') == 'on') { ?>
+							<?php 
+								$thumb = '';
+								$width = 186;
+								$height = 186;
+								$classtext = 'post-thumb';
+								$titletext = get_the_title();
+								$thumbnail = get_thumbnail($width,$height,$classtext,$titletext,$titletext,false,'Entry');
+								$thumb = $thumbnail["thumb"];
+							?>
+							
+							<?php if($thumb <> '') { ?>
+								<div class="post-thumbnail">
+									<?php print_thumbnail($thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, $classtext); ?>
+									<span class="post-overlay"></span>
+								</div> 	<!-- end .post-thumbnail -->
+							<?php } ?>
+						<?php } ?>
+						
+						<?php the_content(); ?>
+						<?php wp_link_pages(array('before' => '<p><strong>'.esc_html__('Trang','Chameleon').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+						
+						<div id='page_edit_link'>
+							<?php edit_post_link(esc_html__('Chỉnh Sửa page','Chameleon')); ?>
+						</div><!-- id='page_edit_link' -->			
+					
+								
+					<?php if (get_option('chameleon_show_pagescomments') == 'on') comments_template('', true); ?>
+				<?php endwhile; endif; ?>
 			
 			</div> 	<!-- end #left-area -->
 
@@ -131,20 +56,22 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 
 	<div id='noi_dung_cont_chitiet'>
 		<?php 
+		/*
             global $post;
-            $args = array('numberposts'=>27,'category'=>23, 'orderby'=>'rand');
+            $args = array('numberposts'=>1,'category'=>26, 'orderby'=>'rand');
             $custom_posts = get_posts($args);
             foreach($custom_posts as $post) : setup_postdata($post); ?>
-             <div id='noi_dung_cont_img'>
+             
                     <?php the_content();?>
                 <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
-            </div><!-- khung_dathang' -->   
+               
                 
         <?php
             endforeach;
             wp_reset_postdata();
-    
+            */
          ?>
+         <iframe width="900" height="253" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,+Hanoi&amp;sll=37.0625,-95.677068&amp;sspn=40.817312,73.564453&amp;ie=UTF8&amp;hq=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,&amp;hnear=Ho%C3%A0n+Ki%E1%BA%BFm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.085141,105.847092&amp;spn=0.040523,0.154324&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=vi&amp;geocode=&amp;q=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,+Hanoi&amp;sll=37.0625,-95.677068&amp;sspn=40.817312,73.564453&amp;ie=UTF8&amp;hq=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,&amp;hnear=Ho%C3%A0n+Ki%E1%BA%BFm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.085141,105.847092&amp;spn=0.040523,0.154324&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">Xem Bản đồ cỡ lớn hơn</a></small>
 	</div> <!-- id='noi_dung_cont_chitiet' -->
 
 <?php get_footer(); ?>
