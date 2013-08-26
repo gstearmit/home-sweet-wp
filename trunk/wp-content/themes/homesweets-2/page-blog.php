@@ -101,64 +101,8 @@ $et_ptemplate_blog_perpage = isset( $et_ptemplate_settings['et_ptemplate_blog_pe
 								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b237a667b71e33"></script>
 			                 </div><!-- id='sharr_ez' -->	
 			                 <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- 'edit_post' -->
-			                 <button id='binhluan_nao'>Thêm Bình Luận</button><!-- id='binhluan_nao -->
-							  <div id='phuc' style='display:none;'>
-							    <?php if ( have_comments() ) : ?>
-		
-											<h3 id="comments"><?php comments_number(esc_html__('No Comments','Chameleon'), esc_html__('One Comment','Chameleon'), '% '.esc_html__('Comments','Chameleon') );?></h3>
-												
-											<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-												<div class="comment_navigation_top clearfix">
-													<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Older Comments', 'Chameleon' ) ); ?></div>
-													<div class="nav-next"><?php next_comments_link( __( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'Chameleon' ) ); ?></div>
-												</div> <!-- .navigation -->
-											<?php endif; // check for comment navigation ?>
-										
-											<?php if ( ! empty($comments_by_type['comment']) ) : ?>
-												<ol class="commentlist clearfix">
-													<?php wp_list_comments( array('type'=>'comment','callback'=>'et_custom_comments_display') ); ?>
-												</ol>
-											<?php endif; ?>
-											
-											<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-												<div class="comment_navigation_bottom clearfix">
-													<div class="nav-previous"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Older Comments', 'Chameleon' ) ); ?></div>
-													<div class="nav-next"><?php next_comments_link( __( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'Chameleon' ) ); ?></div>
-												</div> <!-- .navigation -->
-											<?php endif; // check for comment navigation ?>
-												
-											<?php if ( ! empty($comments_by_type['pings']) ) : ?>
-												<div id="trackbacks">
-													<h3 id="trackbacks-title"><?php esc_html_e('Trackbacks/Pingbacks','Chameleon') ?></h3>
-													<ol class="pinglist">
-														<?php wp_list_comments('type=pings&callback=et_list_pings'); ?>
-													</ol>
-												</div>
-											<?php endif; ?>	
-										<?php else : // this is displayed if there are no comments so far ?>
-										   <div id="comment-section" class="nocomments">
-											  <?php if ('open' == $post->comment_status) : ?>
-												 <!-- If comments are open, but there are no comments. -->
-												 
-											  <?php else : // comments are closed ?>
-												 <!-- If comments are closed. -->
-													<div id="respond">
-													   
-													</div> <!-- end respond div -->
-											  <?php endif; ?>
-										   </div>
-										<?php endif; ?>
-										<?php if ('open' == $post->comment_status) : ?>
-											<?php comment_form( array('label_submit' => esc_attr__( 'gửi bình luận', 'Chameleon' ), 'title_reply' => '<span>' . esc_attr__( 'Viết bình luận', 'Chameleon' ) . '</span>', 'title_reply_to' => esc_attr__( 'Viết bình luận %s' )) ); ?>
-										<?php else: ?>
+			                 <a href='<?php the_permalink();?>'><button id='binhluan_nao'>Bình Luận</button><!-- id='binhluan_nao --></a>
 
-										<?php endif; // if you delete this the sky will fall on your head ?>
-							  </div><!-- id='phuc' -->
-							<script>
-							    $("button").click(function () {
-							      $("#phuc").slideToggle("slow");
-							    });
-							</script>
 						<?php } ?>
 					</div> <!-- end .et_pt_blogentry -->
 					
