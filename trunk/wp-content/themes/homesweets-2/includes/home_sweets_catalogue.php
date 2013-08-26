@@ -1,5 +1,6 @@
 <div id='home_se_catalogue'>
 	   <?php 
+		            // Gallery Images Sweethome 1 AU  : catalogue 
 		            global $post;
 		            $args = array('category'=>11, 'orderby'=>'rand');
 		            $custom_posts = get_posts($args);
@@ -11,7 +12,7 @@
 												<?php the_content();?>
 											</p>
 									</div><!-- id='galylle_cata -->
-									<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
+									<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
 									
 								</div><!-- id='ke_khung_cata -->
 							

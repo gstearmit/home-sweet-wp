@@ -14,11 +14,14 @@
 
 <div id="comment-wrap">
 
-	 <button id='binhluan_nao'>bắt đầu bình luận</button><!-- id='binhluan_nao -->
-							  <div id='phuc' style='display:block;'>
+	 <!-- <button id='binhluan_nao'> số lượng bình luận</button><!-- id='binhluan_nao -->
+							  
 							    <?php if ( have_comments() ) : ?>
 		
 											<h3 id="comments"><?php comments_number(esc_html__('No Comments','Chameleon'), esc_html__('One Comment','Chameleon'), '% '.esc_html__('Comments','Chameleon') );?></h3>
+
+									<button id='binhluan_nao'>Hiện / Ẩn </button><!-- id='binhluan_nao -->	
+									<div id='phuc' style='display:none;'>
 												
 											<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 												<div class="comment_navigation_top clearfix">
@@ -68,9 +71,10 @@
 										<?php endif; // if you delete this the sky will fall on your head ?>
 							  </div><!-- id='phuc' -->
 							<script>
+							// click nut binh luận
 							    $("button").click(function () {
-							      $("#phuc").slideToggle("slow");
-							    });
+							     $("#phuc").slideToggle("slow");
+							   });
 							</script>
 	
 </div><!-- id="comment-wrap" -->

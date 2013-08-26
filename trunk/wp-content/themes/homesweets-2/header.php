@@ -32,7 +32,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />-->
+        <!--
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />-->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/can_ho_tieu_chaun.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
@@ -46,8 +47,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/gioithieu.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
-       <!--  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />-->
+  <!--  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_catalogue.css" />-->
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/can_ho_tieu_chaun.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
@@ -96,6 +97,15 @@ if (is_page(blog)) {
 <?php
 }
 ?>
+
+<?php 
+if (is_page(sweet-home-1-au-co)) {
+?>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/homesweets_dathang.css" />
+<?php
+}
+?>
+
 
 <?php wp_head(); ?>
 

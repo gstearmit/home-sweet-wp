@@ -9,26 +9,23 @@
                             echo $category;
                             ?>
                         </div><!-- id='tit_name_home_sweets' -->
-                        <div id='quangcao1'></div><!-- id='quangcao1 -->
+                        
                         
          <?php 
+           // đặt hàng thực phẩm trực tuyến từ sweethome
             global $post;
-            $args = array('numberposts'=>27,'category'=>9, 'orderby'=>'rand');
+            $args = array('numberposts'=>1,'category'=>9, 'orderby'=>'rand');
             $custom_posts = get_posts($args);
             foreach($custom_posts as $post) : setup_postdata($post); ?>
              <div id='khung_dathang'>
                     <div id='name_avali'>
                         <div id='images_dathang'>
-                           <a href="<?php echo $cfs->get('link_dathang');?>">
-                                <?php 
-                                //  lay anh hien thi 
-                                the_post_thumbnail();
-                                 ?>
-                            </a>
+                           <?php the_content();?>
+                            <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
                          </div>
                     </div><!-- id='name_avali' -->
             </div><!--id='khung_avli' -->   
-                
+             
         <?php
             endforeach;
             wp_reset_postdata();
@@ -61,17 +58,23 @@
                      <?php 
                      // cach 2 : dung shorecode
                     global $post;
-                    $args = array('numberposts'=>27,'category'=>10, 'orderby'=>'rand');
+                    $args = array('numberposts'=>1,'category'=>10, 'orderby'=>'rand');
                     $custom_posts = get_posts($args);
                     foreach($custom_posts as $post) : setup_postdata($post); ?> 
-                                <div id='images_left_tk' >
-                                   <a href="<?php the_permalink()?>">
-                                      <?php the_post_thumbnail(array(85,99));?>
-                                    </a>
-                                 </div>
+                            <div id='Khung_dathang'>
+                                    <div id='thu_vien_anh_dathang'>
+                                            <!-- <h3><?php the_title();?></h3>-->
+                                            <p>
+                                                <?php the_content();?>
+                                            </p>
+                                    </div><!-- id='thu_vien_anh_dathang -->
+                                    <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
+                                    
+                                </div><!-- id='Khung_dathang -->
                     <?php
                         endforeach;
                         wp_reset_postdata();
+
                 
                      ?>
              </div><!-- id='thanthiet' -->

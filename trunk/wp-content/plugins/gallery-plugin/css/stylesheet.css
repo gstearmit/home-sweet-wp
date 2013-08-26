@@ -95,8 +95,9 @@ ul.gallery {
 }
 .gallery .gllr_image_block {
 	float: left;
-    margin: 9px;
+    margin: 9px;min-height: 100%;
 }
+.gllr_image_block p {width: 100%; min-height: 100%}
 #content .gallery .gllr_image_block a img {
     border: 10px solid #F1F1F1;
 	margin-top: 0;

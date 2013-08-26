@@ -165,7 +165,7 @@
     <div id='homesweets_avali'>
         <div id='float_left_se'>
             <?php 
-             include (TEMPLATEPATH . '/includes/home_sweets_catalogue.php');
+             include (TEMPLATEPATH . '/includes/home_sweets_catalogue.php'); // Gallery Images Sweethome 1 AU  : catalogue 
              include (TEMPLATEPATH . '/includes/can_ho_tieu_chaun.php');
              include (TEMPLATEPATH . '/includes/tinh_nang_noi_bat.php');
              include (TEMPLATEPATH . '/includes/thi_truong_dia_phuong_buoi_sang.php');
