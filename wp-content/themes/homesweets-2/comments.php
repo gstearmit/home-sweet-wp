@@ -14,8 +14,8 @@
 
 <div id="comment-wrap">
 
-	 <button id='binhluan_nao'>Thêm Bình Luận</button><!-- id='binhluan_nao -->
-							  <div id='phuc' style='display:none;'>
+	 <button id='binhluan_nao'>bắt đầu bình luận</button><!-- id='binhluan_nao -->
+							  <div id='phuc' style='display:block;'>
 							    <?php if ( have_comments() ) : ?>
 		
 											<h3 id="comments"><?php comments_number(esc_html__('No Comments','Chameleon'), esc_html__('One Comment','Chameleon'), '% '.esc_html__('Comments','Chameleon') );?></h3>
