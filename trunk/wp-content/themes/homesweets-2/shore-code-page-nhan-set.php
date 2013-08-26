@@ -1,4 +1,9 @@
-
+<?php 
+/*
+Cong dung: Viet Shorecode cho page nhan xet cua blog 
+Comment : Viet ham nay de dung chuyen cho blog Nhan Xet Khach hang ve  Chung toi 
+*/
+?>
 <div id='nha_Xet_page' >
   <div id='khung_view_nhan_xet'>
 		<div id='titel_nhan_xet' >Saori từ Nhật Bản</div> <!-- id='titel_nhan_xet' -->

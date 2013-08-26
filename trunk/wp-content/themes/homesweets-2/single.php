@@ -79,7 +79,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 				   <?php } ?>   
 				<?php } ?>
 				
-				<?php //if (get_option('chameleon_show_postcomments') == 'on') comments_template('', true); ?>
+				<?php if (get_option('chameleon_show_postcomments') == 'on') comments_template('', true); ?>
 			<?php endwhile; endif; ?>
 			</div> 	<!-- end #left-area -->
 
