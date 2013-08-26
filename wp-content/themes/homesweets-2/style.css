@@ -524,6 +524,7 @@ margin-bottom: 3px;  }
 /**********nhan xet khach hang ****************/
 
 /***********blog theme********************/
+.form-allowed-tags {display: none;}
 .post p {padding-left: 0px;}
 .et_pt_blogentry_blog { padding: 17px 0 15px;}
 #titel_blog_name { text-transform: uppercase;font-family: Arial, Helvetica, sans-serif;font-size: 20px;text-align: left;line-height: 1.3;padding: .3em 0;color: #000;}

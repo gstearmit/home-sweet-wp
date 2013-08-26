@@ -43,7 +43,7 @@ Comment : page_clients-reviews
 						</div><!-- id='page_edit_link' -->			
 					
 								
-					<?php if (get_option('chameleon_show_pagescomments') == 'on') comments_template('', true); ?>
+					<?php //if (get_option('chameleon_show_pagescomments') == 'on') comments_template('', true); ?>
 				<?php endwhile; endif; ?>
 				
 			</div> <!-- end #content -->

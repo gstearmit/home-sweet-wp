@@ -52,6 +52,9 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/tinh_nang_noi_bat.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/thi_truong_dia_phuong_buoi_sang.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/Ho_tay_cuoi_tuan.css" />
+        <?php // binh luan ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blog_css_new.css" />
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.9.1.js"></script>
     <?php }?>
 
 <link href='http://fonts.googleapis.com/css?family=Calibri:regular,bold' rel='stylesheet' type='text/css'/>
@@ -79,6 +82,20 @@
 </script>
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+<?php 
+// neu la trang blog
+if (is_page(blog)) {
+?>
+<!--
+   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blog_css_new.css" />
+   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js"></script>
+   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/blog_css_new.js"></script>
+-->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blog_css_new.css" />
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.9.1.js"></script>
+<?php
+}
+?>
 
 <?php wp_head(); ?>
 
