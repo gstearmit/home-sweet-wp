@@ -176,7 +176,6 @@ function frontend_plugin_js_scripts_gallery_bank()
 function backend_css_calls()
 {
 	wp_enqueue_style('main', GALLERY_BK_PLUGIN_URL . '/assets/css/main.css');
-	wp_enqueue_style('compare', GALLERY_BK_PLUGIN_URL . '/assets/css/compare.css');
 	wp_enqueue_style('system-message', GALLERY_BK_PLUGIN_URL . '/assets/css/system-message.css');
 	wp_enqueue_style('jquery.titanlighbox.css', GALLERY_BK_PLUGIN_URL .'/assets/css/jquery.titanlighbox.css');
 	wp_enqueue_style('frontend.css', GALLERY_BK_PLUGIN_URL .'/assets/css/frontend.css');
