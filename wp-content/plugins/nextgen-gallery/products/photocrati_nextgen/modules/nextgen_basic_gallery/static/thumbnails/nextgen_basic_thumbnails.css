@@ -15,8 +15,12 @@
 }
 
 .ngg-gallery-thumbnail-box {
-    float: left;
+   float: left;
     margin-right: 5px;
+    width: 97px;
+    height: 67px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 .ngg-template-caption .ngg-gallery-thumbnail-box {
@@ -26,15 +30,18 @@
 .ngg-gallery-thumbnail {
     float: left;
     text-align: center;
+    width: 90px;
+    height: 61px;
+    background-color: #FFFFFF;
+    border: 1px solid #A9A9A9;
 }
 
 .ngg-gallery-thumbnail img {
-    background-color: #FFFFFF;
-    border: 1px solid #A9A9A9;
     display: block;
-    margin: 4px 0px 4px 4px;
-    padding: 4px;
+    padding: 2px;
     position: relative;
+    width: 87px;
+    height: 57px;
 }
 
 .ngg-gallery-thumbnail img:hover {
