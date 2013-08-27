@@ -1,3 +1,5 @@
+<?php
+/*
 <div id='noi_bat_index'>
 	<div id='name_noi_bat'>
 		 <?php
@@ -91,3 +93,48 @@
                             ?>
 			</p>
 </div><!-- id='mo_ta_catalogue -->
+*/
+?>
+
+<div id='noi_bat_index'>
+	<div id='name_noi_bat'>
+		 <?php
+                            global $id;
+                            $id = 19;  // 9 la id catalogue 
+                            $category = get_the_category_by_ID($id); 
+                           //var_dump($category);
+                            echo $category;
+                            ?>
+	</div><!-- id='name_noi_bat' -->
+	
+            <?php 
+					// Tây Hồ thị trường cuối tuần --> id 19 
+		            global $post;
+		            $args = array('numberposts'=>27,'category'=>19, 'orderby'=>'rand');
+		            $custom_posts = get_posts($args);
+		            foreach($custom_posts as $post) : setup_postdata($post); ?>
+						<div id='noi_bat_khung'>
+						          <div id='noi_bat_galylle'> 
+									<?php  the_content();?>
+									<div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
+								</div><!-- id='noi_bat_galylle -->	
+						</div><!-- id='noi_bat_khung -->
+			<?php
+					 endforeach;
+					 wp_reset_postdata();
+			 ?>
+			 
+	<div id='mo_ta_catalogue'>
+			<p>
+				 <?php
+                            global $id;
+                            $id = 19;  // Tây Hồ thị trường cuối tuần
+                            $category_decripts = category_description($id); 
+                            // var_dump( $category_decripts );
+                            echo  $category_decripts ;
+                            ?>
+			</p>
+    </div><!-- id='mo_ta_catalogue -->
+
+</div><!-- id='noi_bat_index -->
+

@@ -22,7 +22,7 @@
                     <div id='name_avali'>
                         <div id='images_dathang'>
                            <?php the_content();?>
-                            <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
+                            <!-- <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
                          </div>
                     </div><!-- id='name_avali' -->
             </div><!--id='khung_avli' -->   
@@ -65,11 +65,11 @@
                             <div id='Khung_dathang'>
                                     <div id='thu_vien_anh_dathang'>
                                             <!-- <h3><?php the_title();?></h3>-->
-                                            <p>
+                                     <div id='dinh_dang_anh'>
                                                 <?php the_content();?>
-                                            </p>
+                                     </div><!-- dinh_dang_anh -->    
                                     </div><!-- id='thu_vien_anh_dathang -->
-                                    <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
+                                    <!-- <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div><!-- id='edit_post' -->
                                     
                                 </div><!-- id='Khung_dathang -->
                     <?php

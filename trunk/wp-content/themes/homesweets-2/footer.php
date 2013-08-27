@@ -1,4 +1,4 @@
-</div><!--end page-info-->
+</div><!-- id="page-wrap" -->
 	 <div id="footer">
     	<?php 
 		            global $post;
