@@ -1,6 +1,6 @@
 <?php 
 /* 
-Template Name: Theme page vitr-location-SweetHome 2 – LAKESIDE
+Template Name: Theme page vitr-location-SweetHome 3- TO NGOC VAN
 Comment : page-them-chitet-cac-page-can-ho-201-602
 */
 ?>
@@ -71,7 +71,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
             wp_reset_postdata();
             */
          ?>
-         <iframe width="900" height="253" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,+Hanoi&amp;sll=37.0625,-95.677068&amp;sspn=40.817312,73.564453&amp;ie=UTF8&amp;hq=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,&amp;hnear=Ho%C3%A0n+Ki%E1%BA%BFm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.085141,105.847092&amp;spn=0.040523,0.154324&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=vi&amp;geocode=&amp;q=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,+Hanoi&amp;sll=37.0625,-95.677068&amp;sspn=40.817312,73.564453&amp;ie=UTF8&amp;hq=AU+CO.+Add.+21B,+lane+236,+Au+Co+str.,+Tay+Ho+dist.,&amp;hnear=Ho%C3%A0n+Ki%E1%BA%BFm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.085141,105.847092&amp;spn=0.040523,0.154324&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">Xem Bản đồ cỡ lớn hơn</a></small>
+         <iframe width="900" height="253" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;q=52+T%C3%B4+Ng%E1%BB%8Dc+V%C3%A2n,+Qu%E1%BA%A3ng+An,+T%C3%A2y+H%E1%BB%93,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;aq=&amp;sll=21.068703,105.822952&amp;sspn=0.012314,0.01796&amp;ie=UTF8&amp;geocode=FSp7QQEdC75OBg&amp;split=0&amp;hq=&amp;hnear=52+T%C3%B4+Ng%E1%BB%8Dc+V%C3%A2n,+T%C3%A2y+H%E1%BB%93,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.080656,105.828466&amp;spn=0.020262,0.077162&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=vi&amp;q=52+T%C3%B4+Ng%E1%BB%8Dc+V%C3%A2n,+Qu%E1%BA%A3ng+An,+T%C3%A2y+H%E1%BB%93,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;aq=&amp;sll=21.068703,105.822952&amp;sspn=0.012314,0.01796&amp;ie=UTF8&amp;geocode=FSp7QQEdC75OBg&amp;split=0&amp;hq=&amp;hnear=52+T%C3%B4+Ng%E1%BB%8Dc+V%C3%A2n,+T%C3%A2y+H%E1%BB%93,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=21.080656,105.828466&amp;spn=0.020262,0.077162&amp;z=14" style="color:#0000FF;text-align:left">Xem Bản đồ cỡ lớn hơn</a></small>
 	</div> <!-- id='noi_dung_cont_chitiet' -->
 
 <?php get_footer(); ?>
