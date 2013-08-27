@@ -367,6 +367,9 @@ padding: 2px;
 .tab_content ul li a:hover {color: #ce9702;}
 
 /***** FOOTER *****/
+#anh_trai {
+padding-left: 8px;
+}
 #footer_body{
 	text-align: center; width: 960px; height: 124px;
     margin-left: 100px;margin-right: 72px;

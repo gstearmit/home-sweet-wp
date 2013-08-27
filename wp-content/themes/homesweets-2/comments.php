@@ -14,11 +14,11 @@
 
 <div id="comment-wrap">
 
-	 <!-- <button id='binhluan_nao'> số lượng bình luận</button><!-- id='binhluan_nao -->
+	        <!-- <button id='binhluan_nao'> số lượng bình luận</button><!-- id='binhluan_nao -->
 							  
 							    <?php if ( have_comments() ) : ?>
 		
-											<h3 id="comments"><?php comments_number(esc_html__('No Comments','Chameleon'), esc_html__('One Comment','Chameleon'), '% '.esc_html__('Comments','Chameleon') );?></h3>
+								    <h3 id="comments"><?php comments_number(esc_html__('không có bình luận nào','Chameleon'), esc_html__('có 1 bình luận','Chameleon'), '% '.esc_html__('Comments','Chameleon') );?></h3>
 
 									<button id='binhluan_nao'>Hiện / Ẩn </button><!-- id='binhluan_nao -->	
 									<div id='phuc' style='display:none;'>
@@ -62,14 +62,14 @@
 													   
 													</div> <!-- end respond div -->
 											  <?php endif; ?>
-										   </div>
+										   </div><!-- id="comment-section" class="nocomments" -->
 										<?php endif; ?>
 										<?php if ('open' == $post->comment_status) : ?>
 											<?php comment_form( array('label_submit' => esc_attr__( 'gửi bình luận', 'Chameleon' ), 'title_reply' => '<span>' . esc_attr__( 'Viết bình luận', 'Chameleon' ) . '</span>', 'title_reply_to' => esc_attr__( 'Viết bình luận %s' )) ); ?>
 										<?php else: ?>
 
 										<?php endif; // if you delete this the sky will fall on your head ?>
-							  </div><!-- id='phuc' -->
+							      </div><!-- id='phuc' -->
 							<script>
 							// click nut binh luận
 							    $("button").click(function () {

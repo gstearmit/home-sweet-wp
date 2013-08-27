@@ -8,7 +8,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
  get_header(); ?>
 <div id='page-info-wapper'>
 		<?php get_sidebar(); ?>
-		 <div id="second-sidebar">
+		     <div id="second-sidebar">
 			 	<div id="khung_dathang">
 			 	    	<div id='khung_trai'>
 			 	    		<?php 
@@ -20,7 +20,8 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 						
 					</div> <!-- id="khung_dathang" -->
 		     </div><!--end second-sidebar-->
-            </div><!--end content-wrap-->
+
+            </div>
 
 		<div id="main-content">
 		<?php get_template_part('includes/breadcrumbs'); ?>
@@ -83,30 +84,9 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 			<?php endwhile; endif; ?>
 			</div> 	<!-- end #left-area -->
 
-			
-
-			<?php //get_sidebar(); ?>
 		</div> <!-- end #content -->	
-		<!-- </div><!--end main-content-->
+		
 	</div><!-- id='page-info-wapper' -->
-<!--
-	<div id='noi_dung_cont_chitiet'>
-		<?php 
-            global $post;
-            $args = array('numberposts'=>27,'category'=>23, 'orderby'=>'rand');
-            $custom_posts = get_posts($args);
-            foreach($custom_posts as $post) : setup_postdata($post); ?>
-             <div id='noi_dung_cont_img'>
-                    <?php the_content();?>
-                <div id='edit_post'><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></div>
-            </div><!-- khung_dathang' -->   
-  <!--              
-        <?php
-            endforeach;
-            wp_reset_postdata();
-    
-         ?>
-	</div> <!-- id='noi_dung_cont_chitiet' -->
 
 	<div id='hen_gap_submit'>
 		<div id='post_cont_hen_gap'>
@@ -128,18 +108,6 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 	     </div><!-- id='post_cont_hen_gap' -->
 
 	     <div id='sunmit_hengap'>
-	     	<!--
-	     	<p>Để hẹn</p>
-	     	<form>
-	     		<ul id='mang_lon'>
-	     			<li id='thanh-1'>
-	     				<div id='name_thanh'></div>
-	     				<div id='input_name_thanh'><input id='' name='' value='' type='text'/></div>
-	     			</li>
-	     		</ul>
-	     		
-	     	</form>
-	     -->
 
 	     <div id="dk_page_03">
 			
@@ -197,5 +165,5 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 	</div><!--id='hen-gap-submit-->
 
 <?php get_footer(); ?>
-	</div><!-- id="page-wrap" -->
+	
 
