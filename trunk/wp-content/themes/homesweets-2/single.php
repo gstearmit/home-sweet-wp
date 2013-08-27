@@ -87,7 +87,7 @@ Comment : page-them-chitet-cac-page-can-ho-201-602
 
 			<?php //get_sidebar(); ?>
 		</div> <!-- end #content -->	
-		</div><!--end main-content-->
+		<!-- </div><!--end main-content-->
 	</div><!-- id='page-info-wapper' -->
 <!--
 	<div id='noi_dung_cont_chitiet'>
