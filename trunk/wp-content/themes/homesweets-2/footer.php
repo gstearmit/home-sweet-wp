@@ -6,6 +6,7 @@
 		            $custom_posts = get_posts($args);
 		            foreach($custom_posts as $post) : setup_postdata($post); ?>
 					<?php  the_content()?>
+					<ul id='post_footer' ><?php edit_post_link(esc_html__('Chỉnh sửa','Chameleon')); ?></ul><!-- 'edit_post' -->
 					<?php
 		            endforeach;
 		            wp_reset_postdata(); ?>

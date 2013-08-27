@@ -385,7 +385,14 @@ padding: 2px;
 #footer img {position: absolute;top: 5px; right: 218px;}
 #fo_li a {color: #333300 !important;}
 
-
+#post_footer {
+position: relative;
+top: -60px;
+left: 30px;
+background-color: #ddd;
+margin: 5px;
+color: #ddd;
+}
 
 
 

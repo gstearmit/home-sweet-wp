@@ -16,6 +16,7 @@
 	position: relative;
 	float: left;
 	min-height: 100%;
+	padding-bottom: 31px;
 }
 #khung_avli {
 	width: 317px;

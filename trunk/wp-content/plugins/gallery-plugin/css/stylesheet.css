@@ -95,9 +95,7 @@ ul.gallery {
 }
 .gallery .gllr_image_block {
 	float: left;
-    margin: 9px;min-height: 100%;
 }
-.gllr_image_block p {width: 100%; min-height: 100%}
 #content .gallery .gllr_image_block a img {
     border: 10px solid #F1F1F1;
 	margin-top: 0;
@@ -126,7 +124,7 @@ ul.gallery {
 	text-align:center;
 }
 #content .gallery_box_single .gallery .gllr_image_block p {
-	/*border: 1px solid #BDBDBD;*/
+	border: 1px solid #BDBDBD;
     margin:5px 6px 0 0;
 	padding: 0;
 }
