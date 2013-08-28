@@ -1,0 +1,54 @@
+Cơ sở dữ liệu Mysql  	Mysql viên	           MySQL Host	Dung lượng đã dùng, MB	Tiến hành
+u118013450_homes	u118013450_homes	mysql.everywebspace.com  	0.016
+
+
+Thank you for your order from us! Your hosting account has now been setup and this email contains all the information you will need in order to begin using your account.
+
+If you have requested a domain name during sign up, please keep in mind that your domain name will not be visible on the internet instantly. This process is called propagation and can take up to 48 hours. Until your domain has propagated, your website and email will not function.
+
+New Account Information
+
+Hosting Package: Free-Professional
+Domain: ezkhachhangmayman.everywebspace.com
+IP Address: 185.28.21.5
+
+Control Panel Login Details
+
+Email Address: gstearmit@gmail.com
+Password: ••••••••••
+
+Control Panel URL: http://cpanel.everywebspace.com
+
+Server Information
+
+Server Name: server27.everywebspace.com
+Server IP: 31.170.166.31
+
+If you are using an existing domain with your new hosting account, you will need to update the nameservers to point to the nameservers listed below.
+
+Nameserver 1: ns1.main-hosting.com 31.170.163.241
+Nameserver 2: ns2.main-hosting.com 64.191.115.234
+Nameserver 3: ns3.main-hosting.com 173.192.183.247
+Nameserver 4: ns4.main-hosting.com 31.170.164.249
+
+Uploading Your Website
+
+You may use one of the addresses given below manage your web site:
+
+Temporary FTP Hostname: 185.28.21.5
+Full FTP Hostname: ftp.ezkhachhangmayman.everywebspace.com
+FTP Username: u118013450
+FTP Password: ••••••••••
+
+You must upload files to the public_html folder!
+
+Email Settings
+
+For email accounts that you setup, you should use the following connection details in your email program:
+
+POP3 Host Address: mx1.everywebspace.com
+SMTP Host Address: mx1.everywebspace.com
+Username: The email address you are checking email for
+Password: As specified when setting up the email account
+
+Thank you for choosing us.

@@ -25,21 +25,5 @@
     </div><!-- id='homesweets_avali' -->
 <?php // echo 'HOME   hoang cong phuc'; ?>
 
-
-<?php 
-/*
-get_template_part('includes/breadcrumbs'); ?>
-
-<?php get_template_part('/includes/top_info'); ?>
-
-<div id="content" class="clearfix">
-	<div id="left-area">
-		<?php get_template_part('includes/entry'); ?>
-	</div> 	<!-- end #left-area -->
-
-	<?php get_sidebar(); ?>
-</div> <!-- end #content -->
-*/
-?>
 </div><!-- page info -->
 <?php get_footer(); ?>
