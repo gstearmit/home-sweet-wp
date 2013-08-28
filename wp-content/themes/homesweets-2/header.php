@@ -27,7 +27,7 @@
 ?>
  <?php if(is_page())
        {  ?>
-          
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/comments.css" /> 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/gioithieu.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
