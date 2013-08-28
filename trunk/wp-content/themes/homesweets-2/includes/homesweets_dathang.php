@@ -2,11 +2,11 @@
                                       
          <?php 
            // đặt hàng thực phẩm trực tuyến từ sweethome id = 9 
-            global $lo_post;
+            global $post;
             $args = array('numberposts'=>1,'category'=>9, 'orderby'=>'rand');
             $custom_posts = get_posts($args);
            // var_dump($custom_posts);
-            foreach($custom_posts as $lo_post) : setup_postdata($lo_post); ?>
+            foreach($custom_posts as $post) : setup_postdata($post); ?>
              <div id='khung_dathang'>
                     <div id='tit_name_home_sweets'><?php the_title(); ?></div><!-- id='tit_name_home_sweets' -->
                     <div id='name_avali'>
