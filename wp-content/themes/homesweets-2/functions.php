@@ -303,4 +303,25 @@ echo bloginfo('template_url');
 echo '/timthumb.php?src='.get_featured_img($post_id).'&amp;h='.$h.'&amp;w='.$w.'&amp;q='.$q.'" alt="'.$alt.'" />';   
 }
 
-?>
+
+
+
+//excerpt de hien thi link --- cắt Excert chi cho hien thi 28 ki tu ra ngoai
+    function new_excerpt_length() {
+        return 28;
+    }
+    
+    add_filter('excerpt_length', 'new_excerpt_length');
+    
+    function new_excerpt_more($more) {
+        global $post;
+        return "<br/> <a class='more-link' href='".get_permalink($post->ID)."'>...Xem tiếp ...</a>";
+    }
+    
+    add_filter('excerpt_more', 'new_excerpt_more');
+
+
+   
+
+
+    ?>

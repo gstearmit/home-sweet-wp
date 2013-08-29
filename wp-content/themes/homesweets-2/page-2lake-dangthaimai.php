@@ -66,7 +66,7 @@ Comment : ( các trang chính hiển thị)
 			                </div><!-- img_can_ho -->
 			                <div id='the_conted_can_ho'>
 			                   <a href="<?php the_permalink();?>">
-			                   		<?php the_excerpt(60);?>
+			                   		<?php the_excerpt();?>
 			                   </a> 
 			                </div><!-- id='the_conted_can_ho' -->
 		                </div> <!-- id='text_can_ho' -->
