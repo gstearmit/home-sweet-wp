@@ -207,7 +207,7 @@ a { color: #333300 ; text-decoration: none;}
 .post img {float: left; margin: 0px 15px;}
 .post p { /*margin-left: 158px;*/}
 .post .meta-data {margin: 70px 0px 0px 0px; border-top: 1px solid #bcd4da;border-bottom: 1px solid #bcd4da;padding: 5px;}
-.more-link {position: absolute; bottom: 7px; right: 0px;}
+.more-link {/*position: absolute;*/ bottom: 7px; right: 0px;font-style: italic;text-decoration: underline;}
 .post-edit-link {float: left;margin-bottom: :3px;}
 a.more-link:hover {text-decoration: underline;}
 .comment-link {position: absolute;top: 0px; right: 0px;display: block;width: 43px; height: 36px;padding-top: 5px;font-weight: bold;color: #ce9702;text-align: center;background: url(images/comment-bubble-rtl.png) no-repeat top left;}

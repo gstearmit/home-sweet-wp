@@ -37,8 +37,9 @@ Comment : ( các trang chính hiển thị)
 			<div id='cac_can_ho'>
 				 <?php 
 		            global $post;
+		            // căn Hộ Sweethome 3 – TO NGOC VAN : Id = 31 
 		           // $args = array('numberposts'=>27,'category'=>22, 'orderby'=>'rand');
-		             $args = array('','category'=>22,'');
+		             $args = array('','category'=>31,'');
 		            $custom_posts = get_posts($args);
 		            foreach($custom_posts as $post) : setup_postdata($post); ?>
 		            
@@ -63,7 +64,7 @@ Comment : ( các trang chính hiển thị)
 			                </div><!-- img_can_ho -->
 			                <div id='the_conted_can_ho'>
 			                   <a href="<?php the_permalink();?>">
-			                   		<?php the_excerpt(60);?>
+			                   		<?php the_excerpt();?>
 			                   </a> 
 			                </div><!-- id='the_conted_can_ho' -->
 		                </div> <!-- id='text_can_ho' -->
