@@ -12,7 +12,8 @@
 <?php 
  if (is_home()) {
 ?>
-        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/featured_2.css" />
+        <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/featured_2.css" />-->
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/featured.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/gioithieu.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets.css" />
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home_sweets_adv.css" />
